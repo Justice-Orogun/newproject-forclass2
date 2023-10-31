@@ -175,3 +175,153 @@ button.contact-btn{
     border-radius: 5px;
     transition: all 0.3s cubic-bezier(1, 0.3, 0.3, 1);
 }
+
+.home .hero{ 
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 8%;
+    display: flex; 
+    align-items: center; 
+    overflow: hidden;
+}
+
+.hero .hero-text{ 
+    position: relative;
+    top: -10px;
+    z-index: 1;
+}
+
+.hero .hero-text h3{ 
+    font-size: 20px;
+    color: var(--primary-clr); 
+    opacity: 0.9;
+
+}
+
+.hero .hero-text h1{ 
+    position: relative;
+    font-size: 45px;
+    color: var(--primary-clr);
+    margin: 12px 0px 25px;
+}
+
+
+.hero .hero-text h1::after{ 
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: var(--primary-clr);
+    left: 0;
+    top: 110%;
+    
+}
+
+.hero .hero-text h2{ 
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--primary-clr);
+
+}
+
+.hero .hero-text p{ 
+    max-width: 500px;
+    /* color: var(--links-clr); */
+    margin: 15px 0px 35px; 
+    line-height: 1.2;
+
+}
+
+.hero .hero-text .hire-btn{ 
+    padding: 10px 35px;
+    box-shadow: 0px 20px 24px 3px rgba(5, 85, 92, 0.2);
+}
+
+.hero .hero-text .hire-btn:hover{ 
+    box-shadow: 0px 5px 15px 3px rgba(5, 85, 92, 0.2);
+}
+
+
+.hero .hero-image{ 
+    position: absolute;
+    width: 500px;
+    height: 900px;
+    background-color: var(--primary-light-clr);
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    transform: rotate(40deg);
+    right: -30px;
+    top: -220px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero .hero-image img{ 
+    position: absolute;
+    width: auto;
+    height: auto; 
+    object-fit: cover;
+    transform: rotate(-40deg);
+    left: 20px;
+    bottom: 0px;
+}
+
+
+.hero .career-container{ 
+    position: relative;
+    width: 100%;
+    height: auto; 
+    margin-top: -100px;
+    left: 0;
+    padding: 0px 8% 10px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px 2%; 
+}
+
+.career-container .career-item{ 
+    background-color: var(--bg-clr-one);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15 );
+}
+
+.career-container .career-item .icon{ 
+    display: inline-block; 
+    background-color: var(--primary-clr);
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.career-container .career-item .icon i{ 
+    font-size: 20px;
+    color: var(--bg-clr-one);
+
+}
+
+.career-container .career-item .career-desc{ 
+    display: inline-block;
+}
+
+
+.career-container .career-item .career-desc h2{ 
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--primary-clr);
+}
+
+.career-container .career-item .career-desc p{ 
+    font-size: 14px;
+    color: var(--text-clr);
+
+}
