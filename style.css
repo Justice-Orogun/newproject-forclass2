@@ -17,7 +17,6 @@ html{
     --links-clr: #186f78;
     --text-clr: #3f7277; 
     --secondary-heading: #277b6d;
-
 }
 
 button.btn{ 
@@ -105,6 +104,7 @@ margin: 0px auto;
     transition: 0.4s;
 }
 
+
 .home.active .navbar{ 
     top: 0;
     position: fixed;
@@ -157,7 +157,6 @@ margin: 0px auto;
 button.contact-btn{ 
     padding: 8px 15px;
     font-size: 15px;
-    
 }
 
 .navbar .menu-btn{ 
@@ -196,7 +195,6 @@ button.contact-btn{
     font-size: 20px;
     color: var(--primary-clr); 
     opacity: 0.9;
-
 }
 
 .hero .hero-text h1{ 
@@ -214,14 +212,12 @@ button.contact-btn{
     background-color: var(--primary-clr);
     left: 0;
     top: 110%;
-    
 }
 
 .hero .hero-text h2{ 
     font-size: 20px;
     letter-spacing: 1px;
     color: var(--primary-clr);
-
 }
 
 .hero .hero-text p{ 
@@ -229,7 +225,6 @@ button.contact-btn{
     /* color: var(--links-clr); */
     margin: 15px 0px 35px; 
     line-height: 1.2;
-
 }
 
 .hero .hero-text .hire-btn{ 
@@ -267,7 +262,7 @@ button.contact-btn{
 }
 
 
-.hero .career-container{ 
+.home .career-container{ 
     position: relative;
     width: 100%;
     height: auto; 
@@ -300,13 +295,11 @@ button.contact-btn{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
 }
 
 .career-container .career-item .icon i{ 
     font-size: 20px;
     color: var(--bg-clr-one);
-
 }
 
 .career-container .career-item .career-desc{ 
@@ -323,5 +316,110 @@ button.contact-btn{
 .career-container .career-item .career-desc p{ 
     font-size: 14px;
     color: var(--text-clr);
-
 }
+
+
+/* this is the about section */
+.about{ 
+    padding: 90px 8% 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .about-image{ 
+    position: relative;
+    flex-basis: 30%;
+    height: 400px;
+    max-height: 450px;
+    background-color: var(--primary-light-clr);
+}
+
+.about .about-desc{ 
+    flex-basis: 65%;
+    margin-left: 3%;
+}
+
+.about .about-image::before{ 
+    position: absolute; 
+    content: '';
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    outline: 3px solid var(--primary-clr);
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+}
+
+.about .about-image img{ 
+    position: relative; 
+    width: 100%;
+    min-width: 280px;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.about .about-image .social-media{ 
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 10px);
+    z-index: 3;
+    background-color: var(--primary-clr);
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.about .about-image .social-media i{ 
+    color: var(--bg-clr-one);
+    margin: 8px 0px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.about .about-image .social-media i:hover{ 
+    transform: scale(1.5);
+}
+
+.about .about-desc h3{ 
+    font-size: 18px;
+    color: var(--links-clr);
+}
+
+.about .about-desc h2{ 
+    margin: 10px 0px;
+    font-size: 22px; 
+    color: var(--primary-clr);
+}
+
+.about .about-desc p{ 
+    font-size: 15px;
+    color: var(--text-clr);
+}
+
+.about-desc .about-personal-info{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--primary-clr);
+}
+
+.about-personal-info div{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-personal-info div span{ 
+    color: black;
+    letter-spacing: 1px;
+}
+
+
+.about-desc .download-btn{ 
+    margin-top: 140px;
+    border-radius: 25px;
+    margin-left: 100px;
+}
+
