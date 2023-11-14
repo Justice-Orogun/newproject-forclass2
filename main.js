@@ -31,3 +31,51 @@ function scrollFunction(){
         homeSection.classList.remove('active');
     }
 }
+
+
+var $galleryContainer = $('.gallery').isotope({ 
+    itemSelector: '.item', 
+    layoutMode: 'fitRows'
+})
+
+$('.button-group .button').on('click', function() { 
+    $('.button-group .button').removeClass('active'); 
+    $(this).addClass('active'); 
+
+    var value = $(this).attr('data-filter'); 
+    $galleryContainer.isotope({ 
+        filter:value
+    })
+})
+
+$('.gallery').magnificPopup({ 
+    delegate: '.overlay a', 
+    type: 'image', 
+    gallery:{ 
+        enabled: true
+    }
+})
+
+
+$('.testimonials-container').owlCarousel({ 
+    loop:true, 
+    autoplay:true, 
+    autoplayTime:6000, 
+    margin: 10, 
+    nav:true, 
+    navText:["<i class='fa-solid fa-arrow-left'></i>",
+             "<i class='fa-solid fa-arrow-left'></i>"],
+             responsive:{ 
+                0:{ 
+                    items:1, 
+                    nav:false
+                }, 
+                600:{ 
+                    items:1, 
+                    nav:true
+                }, 
+                768:{ 
+                    items:2
+                }
+             }
+})
